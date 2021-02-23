@@ -23,9 +23,8 @@ const IndexPage = () => (
     </section>
     <section id="results">
       <div className={`content--md`}>
-        <h6 className={`center`}>Suggestions</h6>
         <div className={`show`}>
-          <h2 className={`center margins--lg`}>🍕 Ah, too much effort, just order a takeaway?</h2>
+          <h3 className={`center margins--lg`}>🍕 Ah, too much effort, just order a takeaway?</h3>
         </div>
       </div>
     </section>

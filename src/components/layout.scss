@@ -306,7 +306,7 @@ h3 {
   font-family: $font;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
+  font-size: 1.6rem;
   line-height: 1.1;
 }
 h4 {
@@ -695,6 +695,10 @@ button {
 
 .show {
   padding: 10vh 0;
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 480px) {
