@@ -1,0 +1,12 @@
+$font: "Manrope", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$primary: #6ab04c;
+$button: #3c40c6;
+$button-shade: #636bd6;
+
+@mixin transition($time) {
+  -webkit-transition: all$time cubic-bezier(0.43, 0.13, 0.15, 0.99);
+  -moz-transition: all$time cubic-bezier(0.43, 0.13, 0.15, 0.99);
+  -o-transition: all$time cubic-bezier(0.43, 0.13, 0.15, 0.99);
+  transition: all$time cubic-bezier(0.43, 0.13, 0.15, 0.99);
+}

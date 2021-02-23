@@ -1,0 +1,105 @@
+@import "vars";
+
+.wrapper {
+  margin-top: 8vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  // grid-column-gap: 8px;
+  position: relative;
+
+  input {
+    padding: 18px 24px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-family: $font;
+    font-weight: 500;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .dropdown {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    width: 100%;
+    max-height: calc(40vh);
+    overflow: auto;
+    padding: 8px 0;
+    background: #fff;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+}
+
+.listItem {
+  padding: 12px 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  @include transition(0.25s);
+
+  .emoji {
+    width: 25px;
+    margin-right: 8px;
+  }
+
+  .name {
+    font-family: $font;
+    font-weight: 500;
+    color: #000;
+    font-size: 1rem;
+  }
+
+  &:hover {
+    background: #eee;
+  }
+
+  &:last-of-type {
+    border-bottom: 0;
+  }
+}
+
+.queries {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 4vh 0;
+
+  .tagWrapper {
+    padding: 16px 24px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+
+    .emoji {
+      width: 25px;
+      margin-right: 8px;
+    }
+
+    .name {
+      font-family: $font;
+      font-weight: 500;
+      color: #000;
+      font-size: 1rem;
+    }
+
+    .remove {
+      height: 24px;
+      width: 24px;
+      margin-left: 8px;
+      cursor: pointer;
+
+      svg {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
